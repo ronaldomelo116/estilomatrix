@@ -1,0 +1,44 @@
+:root {
+    --matrix-green: #00ff41;
+    --matrix-dark-green: #008f11;
+    --matrix-medium-green: #003b00;
+    --matrix-black: #000000;
+    --matrix-dark: #001a00;
+    --matrix-light: #b6ffb6;
+}
+
+#matrix-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#matrix-rain span {
+    position: absolute;
+    color: var(--matrix-green);
+    font-size: 18px;
+    line-height: 18px;
+    text-shadow:
+        0 0 5px var(--matrix-green),
+        0 0 10px var(--matrix-green);
+    animation: cair linear infinite;
+    white-space: pre;
+    opacity: 0.8;
+}
+
+@keyframes cair {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
+
+}
+

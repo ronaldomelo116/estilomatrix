@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+}
+
+:root {
+    --matrix-green: #00ff41;
+    --matrix-dark-green: #008f11;
+    --matrix-medium-green: #003b00;
+    --matrix-black: #000000;
+    --matrix-dark: #001a00;
+    --matrix-light: #b6ffb6;
+}
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at center,
+            #003b00 0%,
+            #001a00 35%,
+            #000000 100%);
+
+    color: var(--matrix-green);
+
+    overflow-x: hidden;
+}
+
+/* body::before {
+    content: "01010101 10101010 00110011 11001100 01010101 00101101 10101010 01100110";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--matrix-green);
+    opacity: 0.08;
+    font-size: 20px;
+    line-height: 30px;
+    word-spacing: 20px;
+    pointer-events: none;
+    z-index: -1;
+} */
+
+
+h1,
+h2,
+h3 {
+    color: var(--matrix-green);
+    text-shadow:
+        0 0 5px var(--matrix-green),
+        0 0 10px var(--matrix-green),
+        0 0 20px var(--matrix-dark-green);
+    text-transform: uppercase;
+}
+
+.sobre h1 {
+    padding: 15px;
+    color: var(--matrix-green);
+    background: rgba(0, 20, 0, 0.85);
+    border: 1px solid var(--matrix-green);
+    border-radius: 4px;
+    box-shadow:
+        0 0 5px var(--matrix-green),
+        inset 0 0 10px rgba(0, 255, 65, 0.1);
+    text-align: center;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.foto img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    padding: 8px;
+    border: 2px solid var(--matrix-green);
+    border-radius: 5px;
+    background: #001a00;
+    box-shadow:
+        0 0 5px var(--matrix-green),
+        0 0 15px var(--matrix-green),
+        0 0 30px rgba(0, 255, 65, 0.4);
+    transition: 0.3s;
+}
+
+.foto img:hover {
+    transform: scale(1.03);
+    box-shadow:
+        0 0 10px var(--matrix-green),
+        0 0 30px var(--matrix-green),
+        0 0 50px rgba(0, 255, 65, 0.5);
+}
+
+.sobre-mim {
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid var(--matrix-green);
+    border-radius: 4px;
+    color: var(--matrix-light);
+    background: rgba(0, 20, 0, 0.85);
+    box-shadow:
+        0 0 5px rgba(0, 255, 65, 0.5),
+        inset 0 0 15px rgba(0, 255, 65, 0.05);
+}
+
+.sobre-mim p {
+    margin-top: 10px;
+    color: var(--matrix-light);
+}
+
+.metas {
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid var(--matrix-green);
+    border-radius: 4px;
+    color: var(--matrix-light);
+    background: rgba(0, 20, 0, 0.85);
+    box-shadow:
+        0 0 5px rgba(0, 255, 65, 0.5),
+        inset 0 0 15px rgba(0, 255, 65, 0.05);
+}
+
+.metas ul {
+    margin: 20px;
+    color: var(--matrix-light);
+}
+
+.metas li {
+    margin: 10px 0;
+    text-shadow:
+        0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.html, .css, .js, .nome, .cidade, .full-stack{
+    color: rgb(0, 255, 89);
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.redes-sociais {
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid var(--matrix-green);
+    border-radius: 4px;
+    color: var(--matrix-light);
+    background: rgba(0, 20, 0, 0.85);
+    box-shadow:
+        0 0 5px rgba(0, 255, 65, 0.5),
+        inset 0 0 15px rgba(0, 255, 65, 0.05);
+}
+
+.redes {
+    margin-top: 10px;
+}
+
+a {
+    display: inline-block;   
+    padding: 6px 10px;
+    color: var(--matrix-green);
+    background: #001a00;
+    border: 1px solid var(--matrix-green);
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #000;
+    background: var(--matrix-green);
+    box-shadow:
+        0 0 10px var(--matrix-green),
+        0 0 20px var(--matrix-green);
+    transform: scale(1.03);
+    border-radius: 10px;   
+}
+
+.devclub {
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid var(--matrix-green);
+    border-radius: 4px;
+    color: var(--matrix-light);
+    background: rgba(0, 20, 0, 0.85);
+    box-shadow:
+        0 0 5px rgba(0, 255, 65, 0.5),
+        inset 0 0 15px rgba(0, 255, 65, 0.05);
+}
+
+.devclub ul {
+    margin: 20px;
+    color: var(--matrix-light);
+}
+
+.devclub li {
+    margin: 10px 0 0 25px;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--matrix-green);
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 10px var(--matrix-green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b6ffb6;
+}
+
+html {
+    -webkit-scrollbar-width: thin;
+    scrollbar-width: thin;
+    scrollbar-color: var(--matrix-green) #000;
+}
+
+.rodape{
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--matrix-light);
+    background: rgba(0, 20, 0, 0.85);
+    border-top: 1px solid var(--matrix-green);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+.rodape p {
+    margin: 8px 0;
+    font-size: 16px;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.rodape p:last-child {
+    color: var(--matrix-green);
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--matrix-dark-green),
+    0 0 10px var(--matrix-green);
+}
+
+._ {
+    opacity: 1;
+    animation: piscar 1s linear infinite;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
